@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100 text-gray-900;
+}
+
+header {
+    @apply bg-blue-500 text-white p-4;
+}
+
+header h1 {
+    @apply text-2xl font-bold;
+}
+
+header nav ul {
+    @apply flex space-x-4;
+}
+
+header nav ul li a {
+    @apply hover:underline;
+}
+
+.task {
+    @apply border p-4 rounded-lg shadow-md bg-white;
+}
+
+.task h2 {
+    @apply text-xl font-bold;
+}
+
+.task p {
+    @apply mb-2;
+}
+
+.task .actions a,
+.task .actions button {
+    @apply bg-yellow-500 text-white px-4 py-2 rounded;
+}
+
+.task .actions button {
+    @apply bg-red-500;
+}
+
+.home-container,
+.about-container,
+.tasks-container,
+.task-list-container,
+.task-detail-container,
+.create-task-container,
+.edit-task-container {
+    @apply max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md;
+}
+
+.home-container h1,
+.task-list-title,
+.task-detail-title,
+.create-task-title,
+.edit-task-title {
+    @apply text-3xl font-bold mb-4;
+}
+
+.home-container h2,
+.about-container h2,
+.tasks-container h2 {
+    @apply text-3xl font-bold mb-4;
+}
+
+.home-container p,
+.about-container p,
+.task-detail-description,
+.task-detail-category,
+.task-detail-tags,
+.task-category,
+.task-tags {
+    @apply text-gray-600 mb-4;
+}
+
+.home-container h3 {
+    @apply text-2xl font-semibold mt-6 mb-2;
+}
+
+.home-container ul,
+.tasks-container ul,
+.task-list {
+    @apply list-none p-0;
+}
+
+.home-container ul li,
+.tasks-container ul li,
+.task-list-item {
+    @apply mb-2;
+}
+
+.home-container ul li a,
+.tasks-container ul li a,
+.task-list-link {
+    @apply text-blue-500 hover:underline;
+}
+
+.task-tag,
+.task-detail-tag {
+    @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2;
+}
+
+.edit-task-form .form-group,
+.create-task-form .form-group {
+    @apply mb-4;
+}
+
+.edit-task-form .form-label,
+.create-task-form .form-label {
+    @apply block text-lg font-semibold mb-2;
+}
+
+.edit-task-form .form-input,
+.create-task-form .form-input,
+.edit-task-form .form-textarea,
+.create-task-form .form-textarea {
+    @apply w-full p-2 border border-gray-300 rounded;
+}
+
+.edit-task-form .form-textarea,
+.create-task-form .form-textarea
+{
+    @apply h-32;
+}
+
+.btn {
+    @apply inline-block px-4 py-2 rounded text-white;
+}
+
+.btn-primary {
+    @apply bg-blue-500 hover:bg-blue-700;
+}
+
+.btn-secondary {
+    @apply bg-gray-500 hover:bg-gray-700;
+}
+
+.btn-danger {
+    @apply bg-red-500 hover:bg-red-700;
+}
+
+.task-delete-form {
+    @apply inline-block mt-4;
+}
+
+.task-list-item {
+    @apply mb-4 p-4 bg-white rounded-lg shadow-md;
+}
+
+.task-list-link {
+    @apply text-xl font-bold text-blue-500 hover:underline;
+}
+
+.task-category {
+    @apply text-gray-600;
+}
+
+.task-tags {
+    @apply mt-2;
+}
+
+.task-comments-container {
+    @apply mt-8;
+}
+
+.task-comments {
+    @apply list-none p-0;
+}
+
+.task-comment {
+    @apply mb-2 p-2 bg-gray-100 rounded-lg shadow-inner;
+}
+
+.form-group {
+    @apply text-gray-700;
+}
+
+.form-group {
+    @apply mt-6;
+}
+
+.form-group .form-group {
+    @apply mb-4;
+}
+
+.form-group .form-label {
+    @apply block text-lg font-semibold mb-2;
+}
+
+.form-group .form-textarea {
+    @apply w-full p-2 border border-gray-300 rounded h-24;
+}
+
